@@ -1,0 +1,130 @@
+@charset "UTF-8"; 
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root { /* cores */ 
+    --cor_fundo: #0AF597;
+    --cor_secundario: #198de6;
+    --cor_titulos: #023621; 
+}
+
+/* ------ cabeçalho da pagina ---------*/ 
+
+header {
+    background-color: #2a2a2a;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.501);
+    padding: 10px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;   
+    text-align: center;
+    text-shadow: 5px 4px 30px rgba(238, 238, 238, 0.302);
+}
+
+
+/* ------ corpo da pagina ---------*/ 
+
+body {
+    background-image: linear-gradient(to left, var(--cor_fundo), var(--cor_secundario));
+}
+
+/*----------- main e títulos ------- */ 
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 20px #00000070;
+    border-radius: 30px;
+    max-width: 700px;
+    margin: 5% auto;
+    padding: 15px;
+}
+
+main h2 {
+    color: var(--cor_titulos);
+    font-size: 2em;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*--------- estlo dos input`s ------- */ 
+
+#box_form{
+    max-width: 400px;
+
+}
+
+main input {
+    margin: 1% 0;
+}
+
+main label {
+    font-size: 18px;
+}
+
+#idade_input {
+    padding: 5px;
+    transition: .8s;
+}
+
+#idade_input:hover {
+    background-color: #c5c5c559;
+}
+
+/* -------- botão input -------*/ 
+
+#button_verificar {
+    background-color: var(--cor_secundario);
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 40px;
+    border: none;
+    padding: 5px;
+    margin: 20px 5px; 
+    transition: .8s;
+}
+
+#button_verificar:hover {
+    transform: scale(0.9);
+    box-shadow: 5px 5px 30px black;
+}
+
+
+
+/* responsividade da pagina */ 
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 20px 10px;
+    }
+
+    header h1, h2 {
+        font-size: 2em;
+    }
+
+    .radio {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
+
+    header h1, h2 {
+        font-size: 1.3em;
+    }
+
+    #idade_input {
+        width: 128px;
+    }
+}

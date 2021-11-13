@@ -1,0 +1,105 @@
+@charset "UTF-8"; 
+
+/* fonte da pagina */
+@font-face {
+    font-family: 'open-sans', sans-serif;
+    src: url('/fonte/Noto_Sans_Display/NotoSansDisplay-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+/* regras */
+* {
+    font-family: var(--fonte-padrao); 
+    margin: 0;
+    padding: 0;
+
+}
+/* variáveis */
+:root {
+    --fonte-padrao: 'open-sans', sans-serif;
+    --cor01: #9F3DEB; 
+    --cor02: #7600D1; 
+    --cor03: #5C00A3;
+    --cor04: #5F01D1;
+    --cor05: #3C0052;  
+}
+
+/* cabeçalho da pagina */ 
+
+header {
+    background-color: #222020;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    padding-left: 10px;
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    padding-right: 10px;
+}
+
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    transition: .7s;
+}
+
+nav > ul > li > a:hover {
+    color: var(--cor02);
+}
+
+#botao-menu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+
+        /* TAMNHO 700px */ 
+        @media screen and (max-width: 700px) {
+            header {
+                flex-direction: column;
+                align-items: unset;
+                padding: 10px;
+            }
+            .logo {
+                margin-top: 10px;
+            }
+            nav > ul {
+                flex-direction: column;
+                text-align: center;
+                padding: 7px;
+                height: 0;
+                display: none;
+            }
+            nav > ul > li {
+                padding: 10px;
+            }
+            #botao-menu {
+                display: block;
+                top: 5px;
+                right: 14px;
+            }
+            #botao-menu:focus ~ nav > ul {
+                height: 111px;
+                display: block;
+            }
+            #botao-menu:focus ~ nav > ul > li > a {
+                display: block;
+            }
+        }   
