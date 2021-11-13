@@ -75,6 +75,42 @@
 
         </div>
     </section>
+
+    <section id="aprendizado">
+        <article>
+            <h2>Momento de aprendizado</h2>
+            <p>Uma brincadeira feita com JavaScript para saaber mais sobre as linguagens, bem simples más de certa forma bem útil.</p>
+            <div class="conteiner_form">
+                <div class="form_language">
+                    <label for="linguagens">Escolha uma linguagem </label> <br>
+
+                    <input type="radio" name="language" id="javascript" >
+                    <label for="js">javascript</label> <br>
+
+                    <input type="radio" name="language" id="java">
+                    <label for="java">java</label> <br>
+
+                    <input type="radio" name="language" id="python">
+                    <label for="python">python</label> <br>
+
+                    <input type="radio" name="language" id="php">
+                    <label for="php">PHP</label> <br>
+
+                    <input type="radio" name="language" id="C">
+                    <label for="c">linguagem C</label>
+                    <br>
+                    <br>
+                    <input type="button" class="button_language" value="verificar" onclick="language_descontrair()">
+    
+                    <input type="button" class="button_language" value="padrão" onclick="restaurar()">
+                </div>
+
+                <div id="res_language">
+                     <p id="res_paragrafo">Área de resposta</p>
+                </div>
+            </div>
+    </section>
+
     <section id="history">
         <!---minha historia de vida--->
         <div class="grid_history">
@@ -94,7 +130,6 @@
             </div>
         </div>
     </section>
-
     <footer id="rodape">
         <div id="flex_footer">
             <div>
@@ -123,6 +158,9 @@
             </ul>
         </div>
     </footer>
+
+
+    <script src="script/language.js"></script>
 </body>
 
 </html>

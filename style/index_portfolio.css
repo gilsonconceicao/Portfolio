@@ -239,6 +239,67 @@ div#divs_projects a:hover {
 }
 
 
+/* ------ momento de aprendizado ---------- */ 
+
+section#aprendizado {
+    padding: 10% 0 ;
+}
+
+section#aprendizado article {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section#aprendizado h2 {
+    font-size: 2em;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+section#aprendizado P {
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* ---- display grid ------ */ 
+
+.conteiner_form {
+    display: grid;
+    grid-template-columns: 500px auto;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+
+/* input label */ 
+
+.form_language input {
+    margin: 10px 0;
+}
+
+/* language */ 
+
+.button_language {
+    background-color: #2a2a2a;
+    color: white;
+    box-shadow: 3px 5px 10px #0000004f;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: .9s;
+}
+
+.button_language:hover {
+    transform: scale(0.8);
+    box-shadow: 5px 7px 30px #2a2a2a;
+}
+
+#res_paragrafo {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px;
+}
 /* ---------- área de contato --------- */ 
 
 footer#rodape {
@@ -285,6 +346,10 @@ div#flex_footer p {
 #list_icons li {
     line-height: 2em;
 }
+
+
+
+
 /* ----- responsividade da pagina -----------*/
 
 @media screen and (max-width: 700px) {
@@ -403,4 +468,18 @@ div#flex_footer p {
     #list_icons img {
         width: 20px;
     }
+}
+
+@media screen and (max-width: 750px) {
+    .conteiner_form {
+        display: block;
+        max-width: 500px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .conteiner_form p {
+        font-size: 17px;
+    }
+    
 }
