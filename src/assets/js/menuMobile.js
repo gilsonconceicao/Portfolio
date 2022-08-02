@@ -15,3 +15,10 @@ document.querySelector('.btn-menu-nav-bar')
             btnMenu.innerHTML = 'X' 
         }
     })
+
+document.querySelectorAll('.nav-bar a').forEach(element => {
+    element.onclick = function () {
+        const itensMenu = document.querySelector('.nav-bar'); 
+        itensMenu.classList.remove('active-menu-mobile'); 
+    }
+})
