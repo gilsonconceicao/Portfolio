@@ -36,3 +36,13 @@ sr.reveal('#form-contacto-personal', {
     duration: 1000, 
     origin: 'bottom'
 })
+
+
+sr.reveal('.card-skills', {
+    duration: 1000, 
+    origin: 'left'
+})
+
+
+
+/*  */
