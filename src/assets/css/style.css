@@ -1,0 +1,571 @@
+@charset "UTF-8"; 
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* definitions */
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables 
+:root {
+    --color-bg: #363737; 
+}
+*/
+
+/*------------------ header ---------------- */
+
+header {
+    background-color: #F4F4F5;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+header a {
+    text-decoration: none;
+}
+
+/* alterar depois... */
+.logo {
+    background-color: #333030d5;
+    color: dodgerblue;
+    font-size: 17px;
+    display: block;
+    border-radius: 50%;
+    padding: 4px 5px;
+    transition: all .6s;
+}
+
+.logo:hover {
+    background-color: #143658;
+    color: white;
+}
+
+
+/* ------itens of menu nav-bar-----*/
+.nav-bar {
+    display: flex;
+    z-index: 20;
+}
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    z-index: 20;
+}
+
+/* itens menu - clique */
+
+.itens-menu {
+    font-size: 18px;
+    color: #343434;
+    transition: .5s;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 5px ;
+    margin-top: 12px;
+    border-bottom: 2px solid transparent;  
+}
+
+.itens-menu:hover {
+    background-color: #3434344b;
+    color: white;
+}
+
+/*btn header*/
+
+
+.btn-contacto {
+    border: 2px solid #0000007c;
+    border-radius: 5px;
+    background: none;
+    color: #fff;
+    display: block;
+}
+
+.btn-contacto a {
+    display: block;
+    color: #000000;
+    padding: 7px 10px;
+    transition: .6s ;
+}
+
+.btn-contacto a:hover {
+    background-color: #343434e3;
+    color: white;
+}
+
+/* btn mobile */
+
+.btn-menu-nav-bar {
+    font-size: 20px;
+    width: 40px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    background-color: #00000030;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+}
+
+.btn-menu-nav-bar:hover {
+    background-color: #00000088;
+}
+
+
+/* -------------- welcome portfolio --------------*/
+
+.welcome-portfolio {
+    background-color: #F4F4F5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9% 0 12% 0;
+}
+
+.apresents {
+    font-style: italic;
+    font-size: 20px;
+    display: block;
+    margin-bottom: -10px;
+}
+
+.welcome-portfolio h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.welcome-portfolio h3 {
+    margin-top: 20px;
+}
+
+
+.title-welcome {
+    max-width: 500px;
+    line-height: 3.6em;
+    padding: 10px;
+    margin-right: 50px; /* ajustar para responsividade */
+}
+
+.list-icon-nwtwork {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+}
+
+.list-icon-nwtwork li {
+    border: 1px solid grey;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.list-icon-nwtwork a:hover {
+    color: white;
+    background-color: #212121de;
+}
+
+.list-icon-nwtwork a {
+    color: #373737;
+    display: block;
+    padding: 2px 20px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.welcome-portfolio img {
+    filter: drop-shadow(0 10px 0.3em #29292932);
+}
+
+
+/* --------------- about - me -----------------*/
+.about-me {
+    padding: 30px 10px 100px 10px;
+    height: 90%;
+}
+.about-me h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+    margin: 30px 0 ;
+}
+
+.about-me img {
+    width: 90%;
+}
+
+.about-grid-container {
+    display: grid;
+    grid-template-columns: 600px auto;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-about {
+    padding-right: 30px ;
+}
+
+.list-folders-progress {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-folders-progress li {
+    cursor: pointer;
+    transition: .3s;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.list-folders-progress li:hover {
+    background-color: #0000001d;
+}
+
+
+.download-curriculo {
+    text-decoration: none; 
+    background-color: #0000001c;
+    padding: 10px;
+    display: block;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* ------------------ topic - estuddos ----------- */
+
+.topic-estude {
+    display: block;
+}
+
+[next-element] {
+    display: none;
+}
+
+
+
+/* -------------------------container-skills-------------------*/
+
+.container-skills {
+    background-color: #eeeeee;
+    display: block;
+    padding: 10px;
+}
+
+.list-languages-skills {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+}
+
+.list-languages-skills li {
+    font-size: 90px;
+    color: #383737;
+}
+
+.my-projects-container {
+    background-color: #F4F4F5;
+    padding: 40px 10px;
+}
+
+.container-projects {
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: start;
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.my-projects-container h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.box-card-project {
+    background-color: #fcfcfc;
+    color: rgb(0, 0, 0);
+    max-width: 500px;
+    cursor: pointer;
+    height: 450px;
+    display: block;
+    position: relative;
+    box-shadow: 0 0 10px #00000035;
+    border-radius: 0 0 15px 15px;
+    transition: all .3s;
+    margin: 15px;
+}
+
+.box-card-project:hover {
+    transform: translateY(-0.7em);
+    
+    box-shadow: 0 0 10px #00000017;
+    z-index: 10;
+}
+
+.box-card-project article {
+    margin: 10px;
+}
+
+.box-card-project img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.box-card-project a {
+    background-color: #4c89ce;
+    border: none;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px 10px;
+    transition: .4s;
+}
+
+.buttons-line {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute; 
+    bottom: 0;
+}
+
+.btn-solid {
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons-line a {
+    width: 150px;
+    font-size: 14px;
+}
+
+.box-card-project a:hover {
+    background-color: #3461ea9e;
+}
+
+.box-card-project h3 {
+    font-size: 23px;
+}
+
+
+
+/* Área contacto form */
+
+.form-contact-dev {
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 5% 10px;
+}
+
+.form-contact-dev article {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.form-contact-dev h2 {
+    font-size: 3em;
+}
+
+.form-contact-dev p {
+    margin: 10px;
+}
+
+
+.area-form-image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0 ;
+}
+
+/* form */
+
+#form-contacto-personal label {
+    font-size: 20px;
+    margin: 10px 0 ;
+}
+
+#form-contacto-personal input {
+    padding: 5px;
+    border: 1px solid #454545;
+    background-color: white;
+    color: #000;
+    box-shadow: 0px 0px 10px #2828280e;
+    border-radius: 4px;
+}
+
+#form-contacto-personal button{
+    background-color: #8679d4; 
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    display: block;
+    width: 90%;
+    box-shadow: 0 0 5px #473d8bc1;
+    transition: all .3s;
+    margin: 20px auto;
+}
+
+#form-contacto-personal button:hover{
+    box-shadow: 0 0 0px;
+    background-color: #4e439a;
+}
+
+
+/* ---------------- >> Responsive page << -------------------- */
+
+@media screen and (max-width: 700px) { /* menu nav-bar */
+    header {
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .btn-menu-nav-bar {
+        font-size: 20px;
+        display: block;
+    }
+
+    .btn-contacto {
+        display: none;
+    }
+
+    .nav-bar {
+        background-color: #e0e0e0;
+        display: block;
+        position: absolute;
+        transform: translateX(-100%);
+        top: 8vh;
+        width: 100%;
+        height: 92vh;
+        left: 0;
+        z-index: 20;
+        transition: .4s;
+    }
+
+    .active-menu-mobile {
+        transform: translateX(0);
+    }
+
+    .nav-bar ul {
+        display: block;
+        padding: 0;
+    }
+
+    .nav-bar a {
+        font-size: 30px;
+        padding: 20px 10px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .welcome-portfolio {
+        display: block;
+    }
+    .welcome-portfolio img {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+
+    .title-welcome{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    .title-welcome h1 {
+        font-size: 3em;
+    }
+    .title-welcome h3 {
+        font-size: 1em;
+        margin-bottom: 0 0 40px 0;
+    }
+    .list-icon-nwtwork {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .list-languages-skills li {
+        font-size: 60px;
+    }
+
+    /* ---- about - me respnse ----- */
+
+    .about-grid-container {
+        display: block;
+    }
+
+    .about-grid-container img {
+        display: block;
+        margin: auto;
+    }
+
+    .container-projects {
+        grid-template-columns: auto;
+        padding: 20px 4px;
+    }
+
+    .box-card-project {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 700px) { /* braek form */
+    
+    .area-form-image {
+        flex-direction: column-reverse;
+    }
+
+    .area-form-image img {
+        display: block;
+        margin: auto;
+        width: 90%;
+    }
+
+    .area-form-image input {
+        width: 100%;
+    }
+
+    .list-icon-nwtwork li {
+        font-size: 19px;
+        border: none;
+    }
+
+    .list-icon-nwtwork a {
+        padding: -10px 10px;
+    }
+}
+
+
+@media screen and (max-width: 270px) { /* braek form */
+    
+    .welcome-portfolio h1 {
+        font-size: 2em;
+    }
+}
