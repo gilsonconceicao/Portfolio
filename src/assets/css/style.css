@@ -73,7 +73,7 @@ header a {
     border-bottom: 2px solid transparent;  
 }
 
-.itens-menu:hover {
+.itens-menu:hover{
     background-color: #3434344b;
     color: white;
 }
@@ -267,22 +267,65 @@ header a {
 .container-skills {
     background-color: #eeeeee;
     display: block;
-    padding: 10px;
+    padding: 5% 10px;
 }
 
-.list-languages-skills {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
+.container-skills article {
+    text-align: center;
+    max-width: 800px;
     margin: auto;
 }
 
-.list-languages-skills li {
-    font-size: 90px;
-    color: #383737;
+.container-inlane-overview {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    margin: 5% 0;
+    padding: 10px ;
 }
 
+.card-skills {
+    background-color: white;
+    width: 300px;
+    position: relative;
+    border-radius: 7px;
+    padding: 40px 10px 10px 10px;
+    margin: 10px;
+}
+
+.icon-area-ti {
+    background-color: #14998c;
+    color: #fff;
+    font-size: 40px;
+    width: 85px;
+    position: absolute;
+    top: -50px;
+    left: 35%;
+    text-align: center;
+    border-radius: 50%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.card-skills h4 {text-align: center;}
+
+.container-skills a {
+    text-decoration: none;
+    color: #4028db;
+}
+
+.container-skills a:hover {text-decoration: underline;}
+/*listcard */
+
+.card-skills ul {list-style-type: none; padding: 0;}
+.card-skills li {padding: 10px;}
+.card-skills li::before {
+    content: '★'; 
+    font-size: 20px;
+    margin-right: 5px;
+}
+/* ---------------------- project container --------------------------- */
 .my-projects-container {
     background-color: #F4F4F5;
     padding: 40px 10px;
@@ -566,6 +609,28 @@ header a {
     }
 }
 
+@media screen and (max-width: 962px) {
+    .container-skills p {
+        text-align: left;
+        margin: 20px 0 ;
+    }
+    .container-inlane-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .card-skills {
+        width: 98%;
+        padding: 10px;
+    }
+
+    .icon-area-ti {
+        font-size: 25px;
+        width: 50px;
+        position: static;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 270px) { /* braek form */
     

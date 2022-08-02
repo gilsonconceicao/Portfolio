@@ -32,11 +32,7 @@ sr.reveal('.box-card-project', {
     
 })
 
-/*
-
-about-grid-container --- img
-
-box-card-project
-
-form-contacto-personal
-*/
+sr.reveal('#form-contacto-personal', {
+    duration: 1000, 
+    origin: 'bottom'
+})

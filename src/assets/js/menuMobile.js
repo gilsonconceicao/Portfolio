@@ -1,13 +1,13 @@
+const btnMenu = document.querySelector('.btn-menu-nav-bar'); 
+const itensMenu = document.querySelector('.nav-bar'); 
+
 document.querySelector('.btn-menu-nav-bar')
     .addEventListener('click', (e) => {
         e.preventDefault(); 
 
-        const itensMenu = document.querySelector('.nav-bar'); 
         itensMenu.classList.toggle('active-menu-mobile'); 
 
         /* toggle button menu - change state icon */
-
-        const btnMenu = document.querySelector('.btn-menu-nav-bar'); 
 
         if (btnMenu.innerHTML == 'X') {
             btnMenu.innerHTML = '<i class="fa-solid fa-bars"></i>';
@@ -18,7 +18,7 @@ document.querySelector('.btn-menu-nav-bar')
 
 document.querySelectorAll('.nav-bar a').forEach(element => {
     element.onclick = function () {
-        const itensMenu = document.querySelector('.nav-bar'); 
         itensMenu.classList.remove('active-menu-mobile'); 
+        btnMenu.innerHTML = '<i class="fa-solid fa-bars"></i>';
     }
 })
