@@ -197,7 +197,7 @@
         </article>
 
         <div class="area-form-image">
-            <form id="form-contacto-personal" action="#" method="#">
+            <div id="form-contacto-personal" >
                 <label for="name">Nome: </label> <br>
                 <input type="text" name="name" id="nameUser"> <br>
                 <label for="lastname">Sobrenome: </label> <br>
@@ -205,15 +205,20 @@
                 <label for="email">Email:</label> <br>
                 <input type="text" name="email" id="emailUser">
                 <br>
-                <button id="btn-submit-data">Submit</button>
-            </form>
+                <button onclick="messageButton()" id="btn-submit-data">Submit</button>
+            </div>
             <div>
                 <img src="src/assets/image/web-design.png">
             </div>
+        </div>
+        <div class="box-message">
+            <button onclick="removeMessage()">X</button>
+            <p class="text-message"></p>
         </div>
     </section>
 </body>
 <script src="https://unpkg.com/scrollreveal" defer></script> <!-- lib -->
 <script src="src/assets/js/menuMobile.js" defer></script>
 <script src="src/assets/js/scrollLib.js" defer></script>
+<script src="src/assets/js/messageForm.js" defer></script>
 </html>

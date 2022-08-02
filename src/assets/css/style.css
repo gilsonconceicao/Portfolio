@@ -420,6 +420,7 @@ header a {
 /* Área contacto form */
 
 .form-contact-dev {
+    position: relative;
     align-items: center;
     max-width: 900px;
     margin: auto;
@@ -482,7 +483,30 @@ header a {
     box-shadow: 0 0 0px;
     background-color: #4e439a;
 }
-
+.box-message {
+    background-color: #1c88a6;
+    border-left: 2px solid black;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: none;
+    border-radius: 7px;
+    padding: 20px;
+}
+.box-message a {
+    color: #25c7a4;
+}
+.box-message button {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 3px 10px;
+}
 
 /* ---------------- >> Responsive page << -------------------- */
 
